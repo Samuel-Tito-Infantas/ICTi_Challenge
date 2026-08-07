@@ -1,7 +1,19 @@
 [project]
 name = "icti-challenge"
 version = "0.1.0"
-description = "TBD"
+description = "Agentic RAG PoC for corporate credit products"
 readme = "README.md"
-requires-python = ">=3.14"
-dependencies = []
+requires-python = ">=3.10"
+dependencies = [
+    "chromadb>=1.0.0",
+    "openai>=2.0.0",
+    "pydantic>=2.11.0",
+    "streamlit>=1.48.0",
+]
+
+[dependency-groups]
+dev = [
+    "jupyter>=1.1.1",
+    "pytest>=8.4.0",
+    "ruff>=0.12.0",
+]
